@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from www.designesia.com/themes/stradale/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 May 2024 14:10:29 GMT -->
+<head>
+    <title>THE DAILY GRIND</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <meta content="" name="author" />
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap" />
+    <link href="css/mdb.min.css" rel="stylesheet" type="text/css" id="mdb" />
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" />
+    <!-- color scheme -->
+    <link href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" id="colors" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+    <body class="dark-scheme">
+        <div id="wrapper">
+        <div id="preloader">
+            <div class="preloader1"></div>
+        </div>
+        <!-- header begin -->
+        <header class="transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <div class="de-flex-col">
+                                    <!-- logo begin -->
+                                    <div id="logo">
+                                        <a href="index.html">
+                                            <img alt="" src="images/logo.png" />
+                                        </a>
+                                    </div>
+                                    <!-- logo close -->
+                                </div>
+                                <div class="de-flex-col">
+                                </div>
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <!-- mainmenu -->
+                                <ul id="mainmenu">
+                                    <li><a href="index.html">Home</a>
+                                        <ul>
+                                            <li><a href="index.html">Homepage Cafe 1</a></li>
+                                           
+                                        </ul>
+                                    </li>
+                                    <li><a href="menu.html">Menu</a>
+                                
+                                    </li>
+                                  
+                                    
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                    
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                                <!-- mainmenu -->
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+            <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+            
+            <!-- section begin -->
+            <section id="subheader" class="jarallax">
+                <img class="jarallax-img" src="images/background/5.jpg" alt="" />
+                <div class="center-y relative text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h1>Contact Us</h1>
+                                <p>Welcome to THE DAILY GRIND</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+
+            <!-- section begin -->
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <form id="contact_form" class="form-border" method="post">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" name="Name" id="name" class="form-control" placeholder="Your Name" required>
+                                        <input type="email" name="Email" id="email" class="form-control" placeholder="Your Email" required>
+                                        <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <textarea name="message" id="message" class="form-control" placeholder="Your Message" required></textarea>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <script>
+                document.getElementById("contact_form").addEventListener("submit", function (event) {
+                    event.preventDefault(); // Prevent default form submission
+            
+                    // Collect form data
+                    const name = document.getElementById("name").value;
+                    const email = document.getElementById("email").value;
+                    const phone = document.getElementById("phone").value;
+                    const message = document.getElementById("message").value;
+            
+                    // Perform form submission (you can add your own logic here)
+            
+                    // Show SweetAlert pop-up
+                    Swal.fire({
+                        title: "<i>Form Submitted Successfully</i>",
+                        html: `Thank you, ${name}! Your message has been received.`,
+                        confirmButtonText: "OK",
+                    });
+                });
+            </script>
+               
+            <!-- section close -->
+
+            <section id="section-location" class="jarallax" aria-label="section">
+                <img class="jarallax-img" src="images/background/6.jpg" alt="" />
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 text-center text-light">
+                            <i class="icon_pin_alt fontsize48 id-color mb30"></i>
+                            <h3>Location</h3>
+                            FCR5+7VH, San Carlos City, Negros Occidental
+                        </div>
+
+                        <div class="col-md-4 text-center text-light">
+                            <i class="icon_mug fontsize48 id-color mb30"></i>
+                            <h3>We're Open</h3>
+                            Weekdays 08:00 - 22:00. Weekends 08:00 - 24:00.
+                        </div>
+
+                        <div class="col-md-4 text-center text-light">
+                            <i class="icon_mail_alt fontsize48 id-color mb30"></i>
+                            <h3>Contact Us</h3>
+                            P: +639021234567. E: sancarlosdailygrind@gmail.com
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- content close -->
+
+        <a href="#" id="back-to-top"></a>
+        
+        <!-- footer begin -->
+        <footer>
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    <a href="index.html">
+                                        <img alt="" class="f-logo" src="images/logo.png" /><span class="copy">&copy; Copyright 2024 - THE DAILY GRIND</span>
+                                    </a>
+                                </div>
+                                <div class="de-flex-col">
+                                    <div class="social-icons">
+                                        <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+                                        <a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+    </div>
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/plugins.min.js"></script>
+    <script src="js/designesia.js"></script>
+    <script src='../../../www.google.com/recaptcha/api.js' async defer></script>
+    <script src="form.js"></script>
+</body>
+
+<!-- Mirrored from www.designesia.com/themes/stradale/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 May 2024 14:10:29 GMT -->
+</html>
