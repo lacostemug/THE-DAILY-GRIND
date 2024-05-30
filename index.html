@@ -20,6 +20,8 @@
     <link href="css/coloring.css" rel="stylesheet" type="text/css" />
     <!-- color scheme -->
     <link href="css/colors/scheme-01.css" rel="stylesheet" type="text/css" id="colors" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="dark-scheme">
@@ -50,10 +52,7 @@
                                 <!-- mainmenu -->
                                 <ul id="mainmenu">
                                     <li><a href="index.html">Home</a>
-                                        <ul>
-                                            <li><a href="index.html">Homepage Cafe 1</a></li>
-                                           
-                                        </ul>
+                                    
                                     </li>
                                     <li><a href="menu.html">Menu</a>
                                 
@@ -671,6 +670,38 @@
                 </div>
             </section>
 
+<center>
+
+    <form id="contact_form" class="form-border" method="post">
+        
+            <div class="col-md-6">
+                <textarea name="message" id="message" class="comment-form" placeholder="Your Comment" required></textarea>
+             <br/>   <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        
+    </form>
+    
+        <script>
+            document.getElementById("contact_form").addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent default form submission
+        
+                // Collect form data
+                const message = document.getElementById("message").value;
+        
+                // Perform form submission (you can add your own logic here)
+        
+                // Show SweetAlert pop-up
+                Swal.fire({
+                    title: "<i>Form Submitted Successfully</i>",
+                    html: `Thank you for feedback, ${name}! Your comment has been received.`,
+                    confirmButtonText: "continue",
+                });
+            });
+        </script>
+
+</center>
+
+                <!-- End of Menu Section -->    
                 <section id="section-location" aria-label="section">
                     <div class="container">
                         <div class="row">
